@@ -1,2 +1,10 @@
 export PATH="~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+
+export JRUBY_HOME=/usr/share/jruby
+export JAVA_HOME=/Library/Java/Home
+export LD_LIBRARY_PATH=/Library/Java/Extensions
+export ANDRIOD_HOME=/usr/share/android
+export CLASSPATH=.:$JRUBY_HOME/lib:$JAVA_HOME/lib
+export FLEX_HOME=/usr/share/flex3
+export PATH=$ANDRIOD_HOME/tools:$JRUBY_HOME/bin:$FLEX_HOME/bin:/opt/local/bin:$PATH
