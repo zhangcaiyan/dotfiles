@@ -1,3 +1,4 @@
+#!/bash/shell
 parse_git_branch() {
   RSLT=''
   GIT_BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/^* //'` 
