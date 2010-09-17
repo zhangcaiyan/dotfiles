@@ -1,0 +1,39 @@
+parse_git_branch() {
+  RSLT=''
+  GIT_BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/^* //'` 
+  if [ "$GIT_BRANCH" ]
+	then
+		GIT_STATUS=`git status 2> /dev/null | grep 'working directory clean'`
+		CLR='2'
+		if [ "$GIT_STATUS" ]
+		then
+			CLR='2'
+	  else
+			CLR='1'
+	  fi
+		RSLT="[3${CLR};40m[${GIT_BRANCH}][0m"
+	fi
+	echo $RSLT
+}
+
+parse_git_remote_status() {
+  RSLT=''
+  GIT_REMOTE_STATUS=`git status 2>/dev/null | grep 'Your branch is ahead of'`
+  if [ "$GIT_REMOTE_STATUS" ]
+  then
+    RSLT="[31;40mr[0m"
+  fi
+  echo $RSLT
+}
+
+COL=`expr $COLUMNS - 1`
+LINE=''
+COUNT=0
+while test ${COL} -gt $COUNT
+do
+	let COUNT++
+	LINE="${LINE}─"
+done
+
+export PS1='\n[0;36m┌${LINE}[${COL}D────[0;33m[\u@\h][0;36m─────[36m[\t][0;36m─────[34m[\W][0;36m─────$(parse_git_branch)───$(parse_git_remote_status)
+└──> \$ \[\e[00m\]'
