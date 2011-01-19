@@ -1,5 +1,5 @@
 export PS1="\w$ "
-export EDITOR="mate -w"
+export EDITOR="vi"
 
 export TERM="xterm-color"
 export CLICOLOR=1
@@ -28,3 +28,4 @@ export HISTIGNORE="ls:la:ll:lal:c:clear:e:exit"
 shopt -s histappend # append history from new session
 shopt -s histverify # verify a substituted history expansion
 shopt -s histreedit # re-edit a failed history substitution
+
