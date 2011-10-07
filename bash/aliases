@@ -3,16 +3,12 @@
 # changing directory to code project
 function c { cd ~/code/$1; }
 
-# alternative to "rails" command to use templates
-function railsapp {
-  template=$1
-  appname=$2
-  shift 2
-  rails $appname -m http://github.com/ryanb/rails-templates/raw/master/$template.rb $@
-}
-
 # misc
 alias reload='. ~/.bash_profile'
 
 alias ls="ls -G"
 alias ll="ls -l"
+
+alias ssh-qa7="ssh deploy@qa7.api.openfeint.com"
+alias ssh-qadb="ssh deploy@db01-staging.of.c43893.blueboxgrid.com"
+alias dep-qa7="TAG=origin/ios_ofsdk3-1.1 bundle exec cap qa7 deploy"
