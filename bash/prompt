@@ -1,3 +1,29 @@
+export TERM="xterm-color"
+export CLICOLOR=1
+export COLOR_NC='[0m' # No Color
+export COLOR_WHITE='\e[1;37m'
+export COLOR_BLACK='\e[0;30m'
+export COLOR_BLUE='\e[0;34m'
+export COLOR_LIGHT_BLUE='\e[1;34m'
+export COLOR_GREEN='\e[0;32m'
+export COLOR_LIGHT_GREEN='\e[1;32m'
+export COLOR_CYAN='\e[0;36m'
+export COLOR_LIGHT_CYAN='\e[1;36m'
+export COLOR_RED='\e[0;31m'
+export COLOR_LIGHT_RED='\e[1;31m'
+export COLOR_PURPLE='\e[0;35m'
+export COLOR_LIGHT_PURPLE='\e[1;35m'
+export COLOR_BROWN='\e[0;33m'
+export COLOR_YELLOW='\e[1;33m'
+export COLOR_GRAY='\e[0;30m'
+export COLOR_LIGHT_GRAY='\e[0;30m'
+
+LINE_COLOR='[0;30m'
+TIME_COLOR='[0;33m'
+TREE_COLOR='[0;36m'
+RUBY_COLOR='[0;33m'
+AHEAD_COLOR='[0;31m'
+
 parse_git_branch() {
   RSLT=''
   GIT_BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/^* //'` 
@@ -11,7 +37,7 @@ parse_git_branch() {
 	  else
 			CLR='1'
 	  fi
-		RSLT="[3${CLR};40m: ${GIT_BRANCH}[0;36m"
+		RSLT=": [0;3${CLR}m${GIT_BRANCH}${LINE_COLOR}"
 	fi
 	echo $RSLT
 }
@@ -21,7 +47,7 @@ parse_git_remote_status() {
   GIT_REMOTE_STATUS=`git status 2>/dev/null | grep 'Your branch is ahead of'`
   if [ "$GIT_REMOTE_STATUS" ]
   then
-    RSLT="[31;40m/ahead[0;36m"
+    RSLT="${AHEAD_COLOR}?ahead${LINE_COLOR}"
   fi
   echo $RSLT
 }
@@ -35,5 +61,5 @@ do
 	LINE="${LINE}─"
 done
 
-export PS1='\n[0;36m┌${LINE}[${COL}D────[36m[\t][0;36m[0;33m[`rvm current`][0;36m────────[34m[\W[0;36m$(parse_git_branch)$(parse_git_remote_status)]
-└──> \$ \[\e[00m\]'
+export PS1='\n${LINE_COLOR}┌${LINE}[${COL}D────[\t `rvm current`${LINE_COLOR}]────────[${TREE_COLOR}\W$(parse_git_branch)$(parse_git_remote_status)${LINE_COLOR}]
+└──> \$ ${COLOR_NC}'
