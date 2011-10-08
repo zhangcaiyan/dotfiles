@@ -61,5 +61,5 @@ do
 	LINE="${LINE}─"
 done
 
-export PS1='\n${LINE_COLOR}┌${LINE}[${COL}D────[\t `rvm current`${LINE_COLOR}]────────[${TREE_COLOR}\W$(parse_git_branch)$(parse_git_remote_status)${LINE_COLOR}]
+export PS1='\n${LINE_COLOR}┌${LINE}[${COL}D────[\t `rvm current`${LINE_COLOR}]────────[${TREE_COLOR}\w$(parse_git_branch)$(parse_git_remote_status)${LINE_COLOR}]
 └──> \$ \[\e[00m\]'
