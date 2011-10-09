@@ -47,7 +47,7 @@ parse_git_remote_status() {
   GIT_REMOTE_STATUS=`git status 2>/dev/null | grep 'Your branch is ahead of'`
   if [ "$GIT_REMOTE_STATUS" ]
   then
-    RSLT="${AHEAD_COLOR}?ahead${LINE_COLOR}"
+    RSLT="${AHEAD_COLOR} ?ahead${LINE_COLOR}"
   fi
   echo $RSLT
 }
