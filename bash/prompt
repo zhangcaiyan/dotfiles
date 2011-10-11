@@ -56,4 +56,4 @@ do
 done
 
 export PS1='\n\[\e[0;30m\]┌${LINE}\[\e[${COL}D\]────[\t `rvm current`\[\e[0;30m\]]────────[\[\e[0;36m\]\w$(parse_git_branch)$(parse_git_remote_status)\[\e[0;30m\]]
-└──> \$ \[\e[0m\]'
+└──> \$ \[\e[00m\]'
