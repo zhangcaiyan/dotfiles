@@ -1,6 +1,4 @@
-export PATH="~/bin:~/.bin:/usr/local/bin:/usr/local/sbin:/Users/yuan/pear/bin:$PATH"
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+ANDROID_HOME="~/Devel/android-sdk-macosx"
 
-export JAVA_HOME=/Library/Java/Home
-export LD_LIBRARY_PATH=/Library/Java/Extensions
-export CLASSPATH=.:$JRUBY_HOME/lib:$JAVA_HOME/lib
+export PATH="~/bin:~/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/usr/local/bin:/usr/local/sbin:$PATH"
+export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
