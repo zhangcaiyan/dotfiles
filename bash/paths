@@ -1,4 +1,8 @@
-ANDROID_HOME="~/Devel/android-sdk-macosx"
+ANDROID_HOME="/Volumes/Sunny/Andy/Devel/android-sdk-macosx"
+M3_HOME="/Volumes/Sunny/Andy/Devel/maven"
+
+export ANDROID_HOME
+export M3_HOME
 
 export PATH="~/bin:~/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
