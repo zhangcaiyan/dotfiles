@@ -1,15 +1,8 @@
-# cd
-alias ..='cd ..'
 
-# ls
-alias ls="ls -F"
-alias l="ls -lAh"
-alias ll="ls -l"
-alias la='ls -A'
 
 # git
-alias gl='git pull'
-alias gp='git push'
+alias gpl='git pull'
+alias gps='git push'
 alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit -a'
@@ -18,8 +11,15 @@ alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
+alias gl='git log'
+alias ga='git add'
+alias gm='git merge'
 
-# rails
+# rails 
+alias create='rake db:create'
+alias migrate='rake db:migrate'
+
+# rails2
 alias sc='script/console'
 alias ss='script/server'
 alias sg='script/generate'
@@ -29,5 +29,42 @@ alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
+alias sgmi='script/generate migration'
+alias sgmo='script/generate model'
+alias sgs='script/generate scaffold'
+
+
+# rails3
+ 
+alias rs='rails server'
+alias rc='rails console'
+alias rg='rails generate'
+alias rgs='rails generate scaffold'
+alias rgmo='rails generate model'
+alias rgmi='rails generate migration'
+alias rgc='rails generate controller'
+alias bi='bundle install'
+
 # commands starting with % for pasting from web
 alias %=' '
+
+# 其他
+alias agi='sudo apt-get install '
+alias acs='sudo apt-cache search '
+alias cat='cat -n'
+alias agr='sudo apt-get remove'
+alias zcy_cs="ssh -p 22000 elbbub@119.57.51.118"
+alias zcy_root@cs="ssh -p 22000 root@119.57.51.118"
+alias zcy_ms='ssh zcy@199.83.91.13 -D 7070'
+alias zcy_fq='ssh zcy@199.83.91.13 -D 7070'
+alias zcy_fq1='ssh root@199.71.215.88 -D 7070'
+alias zcy_ms1='ssh root@199.71.215.88 -D 7070'
+
+  # ls
+alias ls="ls --color"
+alias l="ls -lAh --color"
+alias ll="ls -l --color"
+alias la='ls -A --color'
+
+  # cd
+alias ..='cd ..'
