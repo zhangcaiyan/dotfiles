@@ -1,4 +1,5 @@
-
+#gvim
+alias gvim="gvim -f"
 
 # git
 alias gpl='git pull'
