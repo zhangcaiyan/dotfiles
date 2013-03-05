@@ -1,5 +1,6 @@
 # git
 alias gpl='git pull origin master'
+alias gpd='git pull origin develop'
 alias gps='git push'
 alias gd='git diff'
 alias gc='git commit'
