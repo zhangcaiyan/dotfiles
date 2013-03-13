@@ -73,7 +73,7 @@ alias acs='sudo apt-cache search '
 alias cat='cat -n'
 alias agr='sudo apt-get remove'
 alias zcy_cs="ssh zizipo@192.168.1.169"
-alias zcy_cs1="ssh zizipo@218.240.21.43"
+alias zcy_cs1="ssh zcy@gitlab.wode.jobs"
 alias zcy_ms='ssh zcy@199.83.91.13 -D 7070'
 alias zcy_fq='ssh zcy@199.83.91.13 -D 7070'
 
