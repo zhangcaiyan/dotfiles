@@ -6,8 +6,6 @@ function c { cd ~/code/$1; }
 # misc
 alias reload='. ~/.bash_profile'
 
-alias ls="ls -G"
-alias ll="ls -l"
 
 alias ssh-qa7="ssh deploy@qa7.api.openfeint.com"
 alias ssh-qadb="ssh deploy@db01-staging.of.c43893.blueboxgrid.com"
