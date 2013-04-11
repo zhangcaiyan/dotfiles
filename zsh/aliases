@@ -74,8 +74,8 @@ alias cat='cat -n'
 alias agr='sudo apt-get remove'
 alias zcy_cs="ssh leo@gitlab.wode.jobs"
 alias zcy_cs1="ssh leo@218.240.21.105"
-alias zcy_ms='ssh root@42.96.159.101'
-alias zcy_ms1='ssh zcy@42.96.159.101'
+alias zcy_ms1='ssh root@42.96.159.101'
+alias zcy_ms='ssh zcy@42.96.159.101'
 
   # ls
 alias ls="ls --color"
