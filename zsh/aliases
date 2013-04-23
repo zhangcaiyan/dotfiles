@@ -81,7 +81,7 @@ alias zcy_ms='ssh zcy@42.96.159.101'
   # ls
 alias ls="ls --color"
 alias l="ls -lAh --color"
-alias ll="ls -alFh --color"
+alias ll="ls -lFh --color"
 alias la='ls -A --color'
 
   # cd
