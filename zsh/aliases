@@ -36,7 +36,9 @@ alias gfhp='git flow hotfix publish'
 
 # rails 
 alias create='rake db:create'
+alias createp='rake db:create RAILS_ENV=production'
 alias migrate='rake db:migrate'
+alias migratep='rake db:migrate RAILS_ENV=production'
 
 # rails2
 alias sc='script/console'
@@ -64,6 +66,8 @@ alias rgmo='rails generate model'
 alias rgmi='rails generate migration'
 alias rgc='rails generate controller'
 alias bi='bundle install'
+alias bu='bundle update'
+alias bo='bundle outdated'
 
 # commands starting with % for pasting from web
 alias %=' '
