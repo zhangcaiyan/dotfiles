@@ -1,5 +1,5 @@
 set guioptions-=T " hide toolbar
-set lines=46 columns=200
+set lines=36 columns=150
 
 set guifont=Monaco\ 10
 

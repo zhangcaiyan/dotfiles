@@ -57,6 +57,7 @@ alias sgs='script/generate scaffold'
  
 alias rs='rails server'
 alias rc='rails console'
+alias rcp = 'RAILS_ENV=production rails console'
 alias rg='rails generate'
 alias rgs='rails generate scaffold'
 alias rgmo='rails generate model'
@@ -72,7 +73,7 @@ alias agi='sudo apt-get install '
 alias acs='sudo apt-cache search '
 alias cat='cat -n'
 alias agr='sudo apt-get remove'
-alias zcy_cs="ssh leo@gitlab.wode.jobs"
+alias zcy_cs="ssh leo@218.240.21.106"
 alias zcy_cs1="ssh leo@218.240.21.43"
 alias zcy_cs2="ssh cnjobs@218.240.21.105"
 alias zcy_ms1='ssh root@42.96.159.101'
