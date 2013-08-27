@@ -68,6 +68,8 @@ alias rgc='rails generate controller'
 alias bi='bundle install'
 alias bu='bundle update'
 alias bo='bundle outdated'
+alias rap='rake assets:precompile'
+alias rapp='rake assets:precompile RAILS_ENV=production'
 
 # commands starting with % for pasting from web
 alias %=' '
