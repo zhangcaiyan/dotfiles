@@ -1,12 +1,16 @@
 # git
 alias gpl='git pull origin master'
 alias gpld='git pull origin develop'
+alias gplp='git pull origin production:production'
 alias gps='git push'
 alias gpsd='git push origin develop:develop'
+alias gpsp='git push origin production:production'
 alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gco='git checkout'
+alias gcop='git checkout production'
+alias gcod='git checkout develop'
 alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
@@ -14,6 +18,9 @@ alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG
 alias gl='git log'
 alias ga='git add'
 alias gm='git merge'
+alias gmd='git merge develop'
+alias gmm='git merge master'
+alias gmp='git merge production'
 
 
 # git flow
