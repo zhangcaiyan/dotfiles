@@ -2,7 +2,7 @@
 alias gpl='git pull origin master'
 alias gpld='git pull origin develop'
 alias gplp='git pull origin production:production'
-alias gps='git push'
+alias gps='git push origin master'
 alias gpsd='git push origin develop:develop'
 alias gpsp='git push origin production:production'
 alias gd='git diff'
