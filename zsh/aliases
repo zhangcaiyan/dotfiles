@@ -1,16 +1,21 @@
 # git
-alias gpl='git pull origin master'
+alias gpl='git pull origin'
+alias gplm='git pull origin master'
 alias gpld='git pull origin develop'
-alias gplp='git pull origin production:production'
-alias gps='git push origin master'
-alias gpsd='git push origin develop:develop'
-alias gpsp='git push origin production:production'
+alias gplp='git pull origin production'
+alias gplq='git pull origin qa'
+alias gps='git push origin'
+alias gpsm='git push origin master'
+alias gpsd='git push origin develop'
+alias gpsp='git push origin production'
+alias gpsq='git push origin qa'
 alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gcop='git checkout production'
 alias gcod='git checkout develop'
+alias gcoq='git checkout qa'
 alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
@@ -101,3 +106,6 @@ alias la='ls -A --color'
 
   # cd
 alias ..='cd ..'
+
+ # 其他
+alias unicorn_start='bundle exec unicorn_rails -c config/unicorn.rb'
