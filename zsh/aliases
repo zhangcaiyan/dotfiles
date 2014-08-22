@@ -2,11 +2,15 @@
 alias gpl='git pull origin'
 alias gplm='git pull origin master'
 alias gpld='git pull origin develop'
+alias gpli='git pull origin ims'
+alias gplv='git pull origin view:view'
 alias gplp='git pull origin production'
 alias gplq='git pull origin qa'
 alias gps='git push origin'
 alias gpsm='git push origin master'
 alias gpsd='git push origin develop'
+alias gpsi='git push origin ims'
+alias gpsv='git push origin view:view'
 alias gpsp='git push origin production'
 alias gpsq='git push origin qa'
 alias gd='git diff'
@@ -92,13 +96,18 @@ alias agi='sudo apt-get install '
 alias acs='sudo apt-cache search '
 alias cat='cat -n'
 alias agr='sudo apt-get remove'
-alias zcy_cs="ssh leo@218.240.21.106"
-alias zcy_cs1="ssh leo@218.240.21.43"
-alias zcy_cs2="ssh cnjobs@218.240.21.105"
-alias zcy_ms1='ssh root@42.96.159.101'
-alias zcy_ms='ssh zcy@42.96.159.101'
 
-  # ls
+alias zcy_cs="ssh leo@218.240.21.106"
+alias zcy_cs1="ssh www@prod.web-1"
+alias zcy_cs2="ssh www@prod.web-2"
+alias zcy_cs3="ssh www@prod.web-3"
+alias zcy_cs4="ssh www@prod.data-1"
+alias zcy_cs5="ssh www@prod.data-2"
+alias zcy_cs6="ssh www@prod.data-3"
+alias zcy_web="ssh zcy@115.28.233.223"
+alias zcy_data='ssh zcy@42.96.159.101'
+
+# ls
 alias ls="ls --color"
 alias l="ls -lAh --color"
 alias ll="ls -lFh --color"
@@ -109,3 +118,4 @@ alias ..='cd ..'
 
  # 其他
 alias unicorn_start='bundle exec unicorn_rails -c config/unicorn.rb'
+alias be="bundle exec"
